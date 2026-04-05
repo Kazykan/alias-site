@@ -62,9 +62,9 @@ export default function HeroSection() {
         {/* Карточки языков */}
         <div className="flex flex-wrap gap-4 lg:gap-8 mb-10 lg:mb-16">
           {[
-            { name: "Французский", level: "от А1, до С1", flag: "/france_flag.png" },
-            { name: "Английский", level: "от А1, до С2", flag: "/usa_flag.png" },
-            { name: "Испанский", level: "от А1, до С1", flag: "/spain_flag.png" },
+            { name: "Французский", level: "от А1 до С1", flag: "/france_flag.png" },
+            { name: "Английский", level: "от А1 до С2", flag: "/usa_flag.png" },
+            { name: "Испанский", level: "от А1 до С1", flag: "/spain_flag.png" },
           ].map((item) => (
             <div
               key={item.name}
