@@ -8,27 +8,19 @@ import TeacherAvatar from "./element/TeacherAvatar"
 const teachers = [
   {
     name: "Софья Я.",
-    img: "/teacher-sofiya.png",
-    scale: 1.9,
-    position: { x: 30, y: 35 },
+    img: "/teacher-sofiya-profile.png",
   },
   {
     name: "Анна Т.",
-    img: "/teacher-anna.png",
-    scale: 1.2,
-    position: { x: 40, y: 35 },
+    img: "/teacher-anna-profile.png",
   },
   {
     name: "Алия К.",
-    img: "/teacher-aliay.png",
-    scale: 1.7,
-    position: { x: 40, y: 30 },
+    img: "/teacher-aliay-profile.png",
   },
   {
     name: "Евгения В.",
-    img: "/teacher-evgeniya.png",
-    scale: 2.5,
-    position: { x: 35, y: 25 },
+    img: "/teacher-evgeniya-profile.png",
   },
 ]
 
