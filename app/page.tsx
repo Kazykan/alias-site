@@ -1,6 +1,8 @@
 import HeroSection from "@/components/about"
+import JoinTeamSection from "@/components/JoinTeamSection"
 import CoursesSection from "@/components/CoursesSection"
 import { Navbar } from "@/components/navbar"
+import ReviewsSection from "@/components/ReviewsSection"
 import ShoolAbout from "@/components/ShoolAbout"
 import TeachersSection from "@/components/TeachersSection"
 import { Teachers } from "next/font/google"
@@ -14,6 +16,8 @@ export default function Home() {
       <TeachersSection />
       <ShoolAbout />
       <CoursesSection />
+      <ReviewsSection />
+      <JoinTeamSection />
     </>
   )
 }

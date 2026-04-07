@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { ArrowDown } from "lucide-react"
-import { BlurCard } from "./element/blur_card"
+import { BlurCard } from "./element/BlurCard"
 import TeacherAvatar from "./element/TeacherAvatar"
 
 const features = [

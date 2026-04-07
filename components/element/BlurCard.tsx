@@ -1,7 +1,7 @@
-interface FeatureProps {
+export interface FeatureProps {
   emoji: string
   first_title: string // Первое слово (синее)
-  title: string
+  title?: string
   desc: string
 }
 
@@ -16,7 +16,7 @@ export const BlurCard = ({ feature }: { feature: FeatureProps }) => {
           {/* Синее слово */}
           <span className="text-[#0066FF]">{feature.first_title}</span>
           {/* Пробел и остальная часть */}
-          <span> {feature.title}</span>
+          {feature.title && <span> {feature.title}</span>}
         </h3>
         <p className="text-[12px] lg:text-[14px] text-[#47484D] font-light leading-relaxed max-w-[220px]">
           {feature.desc}
