@@ -1,7 +1,11 @@
+"use client"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { ContactModal } from "./ContactModalForm"
+import { useState } from "react"
 
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-[#F5F8FF]">
       {/* 1. ФОНОВЫЙ СЛОЙ */}
@@ -92,9 +96,13 @@ export default function HeroSection() {
 
         {/* Кнопки */}
         <div className="flex flex-col sm:flex-row gap-4 mb-16 lg:mb-24">
-          <Button className="w-full sm:w-auto h-[60px] lg:h-[72px] px-8 lg:px-10 bg-[#0066FF] hover:bg-[#0052CC] rounded-full text-[16px] lg:text-[18px] font-medium font-['Geologica']">
+          <Button
+            onClick={() => setIsModalOpen(true)}
+            className="w-full sm:w-auto h-[60px] lg:h-[72px] px-8 lg:px-10 bg-[#0066FF] hover:bg-[#0052CC] rounded-full text-[16px] lg:text-[18px] font-medium font-['Geologica']"
+          >
             Записаться на пробное занятие
           </Button>
+          <ContactModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
           <Button
             variant="outline"
             className="w-full sm:w-auto h-[60px] lg:h-[72px] px-8 lg:px-10 border-[#0066FF] text-[#0066FF] hover:bg-[#0066FF]/5 rounded-full text-[16px] lg:text-[18px] font-medium font-['Geologica']"

@@ -7,6 +7,7 @@ import ShoolAbout from "@/components/ShoolAbout"
 import TeachersSection from "@/components/TeachersSection"
 import { Teachers } from "next/font/google"
 import Image from "next/image"
+import ContactSection from "@/components/ContactSection"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <CoursesSection />
       <ReviewsSection />
       <JoinTeamSection />
+      <ContactSection />
     </>
   )
 }

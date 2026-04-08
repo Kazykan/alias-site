@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Geologica, Geist_Mono } from "next/font/google"
 import { Navbar } from "@/components/navbar" // Путь к твоему файлу Navbar
 import "./globals.css"
+import { Toaster } from "@/components/ui/sonner"
 
 // Подключаем основной шрифт из твоего дизайна
 const geologica = Geologica({
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-geologica bg-[#E4E9F6]">
         {/* flex-1 заставляет этот блок занимать всё свободное место */}
         <main className="flex-1">{children}</main>
+        <Toaster position="top-center" richColors />
 
         {/* Сюда позже добавишь <Footer /> */}
       </body>

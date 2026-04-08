@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image"
 import { BlurCard, FeatureProps } from "./element/BlurCard"
+import { CareerModal } from "./CareerModal"
+import { useState } from "react"
 
 const joinFeatures: FeatureProps[] = [
   {
@@ -20,6 +23,7 @@ const joinFeatures: FeatureProps[] = [
 ]
 
 export default function JoinTeamSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <section className="w-full py-12 lg:py-20 bg-[#F5F8FF]">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-20">
@@ -50,9 +54,15 @@ export default function JoinTeamSection() {
           </div>
 
           {/* Кнопка "Отправить резюме" */}
-          <button className="w-full bg-white text-[#2E66F6] py-5 lg:py-6 rounded-[24px] lg:rounded-[30px] font-semibold text-[18px] lg:text-[22px] transition-all hover:bg-[#F0F5FF] active:scale-[0.98] shadow-md">
+          <button
+            onClick={() => setIsModalOpen(true)} // Просто открываем по клику
+            className="w-full bg-white text-[#2E66F6] py-5 lg:py-6 rounded-[24px] lg:rounded-[30px] font-semibold text-[18px] lg:text-[22px] transition-all hover:bg-[#F0F5FF] active:scale-[0.98] shadow-md"
+          >
             Отправить резюме
           </button>
+
+          {/* Само окно рендерится где-нибудь внизу секции */}
+          <CareerModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
 
           {/* Легкий декоративный блик (как на макете) */}
           <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-white/5 rounded-full blur-[100px] pointer-events-none" />
