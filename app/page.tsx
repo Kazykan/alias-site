@@ -9,7 +9,7 @@ import Image from "next/image"
 import ContactSection from "@/components/ContactSection"
 import Footer from "@/components/Footer"
 import TeamSection from "@/components/TeamSection"
-import { NavbarSection } from "@/components/Navbar"
+import { NavbarSection } from "@/components/navbar"
 
 export default function Home() {
   return (
