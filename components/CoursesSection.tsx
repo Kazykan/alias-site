@@ -85,7 +85,7 @@ const courses: Course[] = [
 
 export default function CoursesSection() {
   return (
-    <section className="w-full py-16 lg:py-24 bg-white font-['Geologica']">
+    <section id="CourseSection" className="w-full py-16 lg:py-24 bg-white font-['Geologica']">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-20">
         {/* Заголовок */}
         <div className="max-w-[800px] mb-12 lg:mb-16">

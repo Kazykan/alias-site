@@ -34,7 +34,7 @@ const features = [
 
 export default function ShoolAbout() {
   return (
-    <section className="w-full bg-[#F5F8FF] py-10 lg:py-14 font-['Geologica'] overflow-hidden">
+    <section id="schoolAbout" className="w-full bg-[#F5F8FF] py-10 lg:py-14 font-['Geologica'] overflow-hidden">
       {/* Контейнер с общими отступами страницы */}
       <div className="max-w-[1440px] mx-auto px-4 lg:px-20">
         {/* Заголовок блока (тот же) */}
